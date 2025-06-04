@@ -1,0 +1,58 @@
+def factorial(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+    n=int(input("Enter any number:"))
+    print("Factorial value of",n,"is:",factorial(n))
+
+
+def fibonacci(Number):
+    if(Number==0):
+        return 0
+    elif Number==1:
+        return 1
+    else:
+        return fibonacci(Number-2)+fibonacci(Number-1)
+    Number=int(input("Please Enter the fibonacci Number Range="))
+    sum=0
+    for Num in range(Number):
+        print(fibonacci(Num),end='')
+        sum=sum+fibonacci(Num)
+        print("\n The sum of fibonacci series Numbers=%d",sum)
+
+
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+    x=input("Enter the first integer:")
+    y=input("Enter the second integer:")
+    if x.is digit()and y.is digit():
+        a=int(x)
+        b=int(y)
+    result=gcd(a,b)
+    print(f"the GDC of{a} and {b} is:",result)
+    else:
+        print("Please enter valid integer.")
+
+
+def pal(s):
+    s=s.lower()
+    if ilen(s)<=1:
+        return True
+    elif s[0]!=s[-1]:
+        return False
+    else:
+        return pal(s[1:-1])
+    myinput=input("Enter a String:")
+    if pal(myinput):
+        print(f"'{myinput}'is a palindrome.")
+    else:
+        print(f"'{myinput}'is not a palindrome.")
+
+
+
