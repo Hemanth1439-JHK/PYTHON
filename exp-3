@@ -1,0 +1,32 @@
+s=input("Enter the string:")
+print(s.split())
+
+
+I=[10,20,30,"Hemanth",(10+20j),True,1]
+print(I[3])
+print(I[-2])
+print(I[1:4])
+print(I)
+I.remove
+
+
+mylist=[]
+n=int(input("Enter any number:"))
+for x in range(n):
+    num=int(input("Enter a number:"))
+    mylist.append(num)
+print("my updated list is:",mylist)
+
+
+l=[10,20,30,40,60,True,1]
+print(len(l))
+print(l)
+print(max(l))
+print(min(l))
+
+
+mylist=[8,2,3,0,7]
+sum=0
+for i in mylist:
+    sum=sum+i
+print("The sum is:",sum)
