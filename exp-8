@@ -1,0 +1,47 @@
+import random
+random_number=random.randint(1,10)
+print("Random Number:",random_number)
+
+
+import datetime
+current_datetime=datetime.datetime.now()
+print("Current Date and Time:",current_datetime)
+
+
+import math
+number=25
+sqrt=math.sqrt(number)
+print("Square Root:",sqrt)
+
+
+import math
+factorial=math.factorial(5)
+print("Factorial:",factorial)
+
+
+file_path="example.txt"
+with open(file_path,"w")as file:
+    file.write("Hello,World!")
+with open(file_path,"r")as file:
+    content=file.read()
+print("File Content:",content)
+
+
+import string
+text="hello,world!"
+uppercase_text=text.upper()
+print("Uppercase Text:",uppercase_text)
+
+
+import secrets
+random_number=secrets.randbelow(10)+1
+print("Cryptographically Secure Random Number:",random_number)
+
+
+import platform
+system_name=platform.system()
+node_name=platform.node()
+processor_name=platform.processor()
+print("System Name:",system_name)
+print("Node Name:",node_name)
+print("Processor Name:",processor_name)
