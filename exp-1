@@ -1,0 +1,57 @@
+EXP-1
+ a=10
+ b=5
+ print(a+b)
+ print(a-b)
+ print(a*b)
+ print(a/b)
+ print(a%b)
+ print(a//b)
+ print(a**b)
+
+
+a=eval(input("enter first number"))
+b=eval(input("enter second number"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a//b)
+print(a**b)
+
+a=int(input("enter first number"))
+b=int(input("enter second number"))
+temp=a
+a=b
+b=temp
+print("after swapping of two numbers are:")
+print("=================================")
+print("first value is:",a)
+print("second value is:",b)
+
+
+ h=eval(input("enter the height"))
+b=eval(input("enter the base"))
+area=0.5*h*b
+print(area)
+
+l=eval(input("enter the lenght"))
+b=eval(input("enter the breadth"))
+area=l*b
+perimeter=2*(l+b)
+print(area)
+print(perimeter)
+
+a=5
+b=6
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+
+d=eval(input("Enter the diameter"))
+radius=d/2
+print(radius)
+
+
