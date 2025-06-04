@@ -1,0 +1,48 @@
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt","r")
+print("file object is opened")
+print(f)
+data=f.read()
+print(data)
+
+
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt","r")
+print("file object is opened")
+print(f)
+data=f.read()
+print(data)
+
+
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt",'r')
+data=f.read()
+print('Total available characters in a given file is:',len(data))
+
+
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt",'r')
+data=f.read()
+lw=data.split()
+print('Total number of words in a given file is:',len(lw))
+print('Available words are:',lw)
+
+
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt",'r')
+data=f.read()
+lw=data.split()
+d={}
+for word in lw:
+    if word not in d:
+        d[word]=1
+    else:
+        d[word]=d[word]+1
+print(d)
+
+
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt",'r')
+print("The filepointer is at byte:",f.tell())
+content=f.read();
+print("After reading,the filepointer is at:",f.tell())
+
+
+f=open("D:/HEMANTH 24FFMCA023/python/hk.txt",'r')
+print("The filepointer is at byte:",f.tell())
+content=f.seek(10);
+print("After reading,the filepointer is at:",f.tell())
